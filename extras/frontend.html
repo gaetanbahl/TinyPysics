@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TinyPysics Server Test</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>TinyPysics Server Test Interface</h1>
+    <p>This is a simple test interface for the TinyPysics multiplayer server.</p>
+
+    <script type="text/javascript">
+        function sendCommand() {
+            const data = document.getElementById('command_input').value;
+            fetch('/', {
+                method: 'POST',
+                body: data,
+                headers: {
+                    'Content-Type': 'text/plain'
+                }
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('result').textContent = result;
+            })
+            .catch(error => {
+                document.getElementById('result').textContent = 'Error: ' + error;
+            });
+        }
+    </script>
+
+    <div>
+        <label for="command_input">Command:</label>
+        <input type="text" id="command_input" value="getall" size="40">
+        <button onclick="sendCommand()">Send</button>
+    </div>
+
+    <h2>Result:</h2>
+    <pre id="result">-</pre>
+
+    <h2>Available Commands:</h2>
+    <ul>
+        <li><code>newship x y id</code> - Create new ship at position</li>
+        <li><code>getall</code> - Get all object positions</li>
+        <li><code>newclient id</code> - Register new client</li>
+        <li><code>delclient id</code> - Remove client</li>
+        <li><code>boost id</code> - Apply thrust</li>
+        <li><code>noboost id</code> - Stop thrust</li>
+        <li><code>rotateleft id</code> - Rotate left</li>
+        <li><code>rotateright id</code> - Rotate right</li>
+    </ul>
+</body>
+</html>
