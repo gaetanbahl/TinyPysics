@@ -70,20 +70,20 @@ python orbital_mechanics_interactive.py
 
 ### Example Descriptions
 
-| Example | Physics Concepts | Description |
-|---------|------------------|-------------|
-| **orbital_mechanics_interactive.py** | Kepler's laws, two-body problem, momentum | Two bodies in mutual orbit with interactive thrust control. Demonstrates elliptical orbits and spacecraft maneuvering. |
-| **three_body_problem.py** | Chaotic dynamics, N-body gravitational | Three gravitating bodies showing chaotic, unpredictable trajectories. Great for discussing sensitivity to initial conditions. |
-| **spacecraft_dynamics.py** | Rotational dynamics, thrust vectoring | Controllable spacecraft orbiting a planet. Shows how orientation affects thrust direction. |
-| **solar_system.py** | Planetary motion, orbital mechanics | 9 bodies orbiting a central mass. Demonstrates stable orbital configurations and Kepler's third law. |
-| **spring_pendulum.py** | Hooke's law, harmonic motion, damping | Mass on spring with gravity and friction. Spring color shows extension. Perfect for teaching simple harmonic motion. |
-| **coupled_oscillators.py** | Coupled oscillations, normal modes | Two masses connected by a spring. Center of mass stays fixed while masses oscillate. |
-| **elastic_collision.py** | Momentum conservation, elastic collisions | Two objects colliding elastically. Shows momentum and energy conservation. |
-| **collision_cascade.py** | Chain reactions, energy dissipation | Fast object hits row of stationary objects. Demonstrates momentum transfer and friction. |
-| **four_body_collisions.py** | N-body gravity with collisions | Four gravitating bodies that can collide. Shows gravitational clustering. |
-| **binary_star_system.py** | Dual gravity, Lagrange points | Small body orbiting two massive stars. Creates complex trajectories. |
-| **nbody_benchmark.py** | N-body simulation, O(n²) complexity | 60 randomly placed gravitating bodies. Performance benchmark for the engine. |
-| **nbody_threaded.py** | Parallel computation | Same as nbody_benchmark but with multi-threading. Compare performance. |
+| Example | Physics Concepts | Description | Animation |
+|---------|------------------|-------------|-----------|
+| **orbital_mechanics_interactive.py** | Kepler's laws, two-body problem, momentum | Two bodies in mutual orbit with interactive thrust control. Demonstrates elliptical orbits and spacecraft maneuvering. |![Orbital mechanics interactive animation](examples/readme_animations/orbital_mechanics_interactive.gif)|
+| **three_body_problem.py** | Chaotic dynamics, N-body gravitational | Three gravitating bodies showing chaotic, unpredictable trajectories. Great for discussing sensitivity to initial conditions. |![Three body problem animation](examples/readme_animations/three_body_problem.gif)|
+| **spacecraft_dynamics.py** | Rotational dynamics, thrust vectoring | Controllable spacecraft orbiting a planet. Shows how orientation affects thrust direction. |![Spacecraft dynamics animation](examples/readme_animations/spacecraft_dynamics.gif)|
+| **solar_system.py** | Planetary motion, orbital mechanics | 9 bodies orbiting a central mass. Demonstrates stable orbital configurations and Kepler's third law. |![Solar system animation](examples/readme_animations/solar_system.gif)|
+| **spring_pendulum.py** | Hooke's law, harmonic motion, damping | Mass on spring with gravity and friction. Spring color shows extension. Perfect for teaching simple harmonic motion. |![Spring pendulum animation](examples/readme_animations/spring_pendulum.gif)|
+| **coupled_oscillators.py** | Coupled oscillations, normal modes | Two masses connected by a spring. Center of mass stays fixed while masses oscillate. |![Coupled oscillators animation](examples/readme_animations/coupled_oscillators.gif)|
+| **elastic_collision.py** | Momentum conservation, elastic collisions | Two objects colliding elastically. Shows momentum and energy conservation. |![Elastic collision animation](examples/readme_animations/elastic_collision.gif)|
+| **collision_cascade.py** | Chain reactions, energy dissipation | Fast object hits row of stationary objects. Demonstrates momentum transfer and friction. |![Collision cascade animation](examples/readme_animations/collision_cascade.gif)|
+| **four_body_collisions.py** | N-body gravity with collisions | Four gravitating bodies that can collide. Shows gravitational clustering. |![Orbital mechanics interactive animation](examples/readme_animations/four_body_collisions.gif)|
+| **binary_star_system.py** | Dual gravity, Lagrange points | Small body orbiting two massive stars. Creates complex trajectories. |![Binary Star System animation](examples/readme_animations/binary_star_system.gif)|
+| **nbody_benchmark.py** | N-body simulation, O(n²) complexity | 60 randomly placed gravitating bodies. Performance benchmark for the engine. |![N-body benchmark animation](examples/readme_animations/nbody_benchmark.gif)|
+| **nbody_threaded.py** | Parallel computation | Same as nbody_benchmark but with multi-threading. Compare performance. |![N-body threaded animation](examples/readme_animations/nbody_threaded.gif)|
 
 ## API Overview
 
