@@ -10,8 +10,12 @@ This project was originally created in 2013 as a way to visualize examples from 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/tiny_pysics.git
+git clone https://github.com/gaetanbahl/tiny_pysics.git
 cd tiny_pysics
+
+# Create a virtual environment and activate it. E.g., on Linux:
+python3 -m venv env
+source ./env/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
